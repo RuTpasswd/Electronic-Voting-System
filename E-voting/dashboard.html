@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Admin Dashboard </title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style1.css" rel="stylesheet">
+    <!--<script src="https://code.jquery/jquery-3.1.0.min.js"> </script>-->
+	<script type="text/javascript" src="js/voting.js"></script>
+</head>
+
+  <style>
+
+    .dropdown {
+
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 200px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+        margin-left:230px;
+        margin-top:-35px;
+        transition: all 0.5s;
+    }
+
+  </style>
+
+<body>
+ <nav class="navbar navbar-default ">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#" id="maintitle">ULK online voting system </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+
+        <a href="admin.html">  </a>
+
+        </div>
+      </div>
+    </nav> 
+   <header id="header">
+
+        <div class="container">
+           <div class="row">
+             <div class="col-md-10">
+               <h1> <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Dashboard <small> System Management</small> </h1>
+
+             </div>
+
+          </div>
+     </div>
+   </header>
+    <section id="breadcrumb">
+        
+        <div class="container">
+           <ol class="breadcrumb">
+               <li class="active"> Dashboard </li>
+           </ol>
+        </div>
+
+   </section>
+
+    <section id="main">
+
+      <div class="container">
+
+        <div class="row">
+            
+            <div class="col-md-3">
+
+            <div class="list-group ">
+
+                    <a href="index.html" class="list-group-item active main-color-bg">  <span class="glyphicon glyphicon-cog" aria-hidden="true">    </span> Dashboard Selection </a>
+
+                   <div class="dropdown">
+                       <a href="" class="list-group-item"><span class="glyphicon glyphicon-align-left" aria-hidden="true"></span> Faculty  </span> <span style ="float:right;" class="glyphicon glyphicon-chevron-right"> </span> </a>
+
+                       <div class="dropdown-content">
+
+                        <ul style="list-style:;">
+                           <li><a style="text-decoration:none;" href="#">Science and Technology</a></li>
+                           <hr>
+                           <li><a style="text-decoration:none;" href="#">Economics and Business Studies</a></li>
+                           <hr>
+                           <li><a style="text-decoration:none;" href="#">Social Sciences</a></li>
+                        </ul> 
+
+                       </div>
+                   </div> 
+
+                   <div class="dropdown">
+                       <a href="" class="list-group-item"><span class="glyphicon glyphicon-align-left" aria-hidden="true"></span> Departemnet </span> <span style ="float:right;" class="glyphicon glyphicon-chevron-right"> </span> </a>
+
+                       <div class="dropdown-content">
+
+                        <ul style="list-style:;">
+                           <li><a style="text-decoration:none;" href="#">Computer Science</a></li>
+                           <li><a style="text-decoration:none;" href="#">Economics</a></li>
+                           <li><a style="text-decoration:none;" href="#">Acounting</a></li>
+                           <li><a style="text-decoration:none;" href="#">Law</a></li>
+                           <li><a style="text-decoration:none;" href="#">Devpt studies</a></li>
+                           <li><a style="text-decoration:none;" href="#">International Rel</a></li>
+
+                        </ul> 
+
+                       </div>
+                   </div> 
+
+                   <div class="dropdown">
+                       <a href="" class="list-group-item"><span class="glyphicon glyphicon-align-left" aria-hidden="true"></span> Section</span> <span style ="float:right;" class="glyphicon glyphicon-chevron-right"> </span> </a>
+
+                       <div class="dropdown-content">
+
+                        <ul style="list-style:;">
+                           <li><a style="text-decoration:none;" href="#">Day</a></li>
+                           <li><a style="text-decoration:none;" href="#">Evening</a></li>
+                           <li><a style="text-decoration:none;" href="#">Weekend</a></li>
+                        </ul> 
+
+                       </div>
+                   </div> 
+
+                  
+             </div>
+
+               <div class="list-group ">
+
+                       <a href="" class="list-group-item active main-color-bg">  <span class="glyphicon glyphicon-cog" aria-hidden="true">    </span> Dashboard Options </a>
+                       <a href="" class="list-group-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Publish <span class="glyphicon g"> </span> </a>
+                      <a href="" class="list-group-item"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> System control</span> <span class=""> </span></a>
+                     <a href="" class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"> </span> Active voters </span> <span class="badge"> 20 </span></a>
+                </div>
+
+            <div class="well">
+              
+                <h4> Voting progress </h4>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                     60% </div>
+                </div>
+            </div>
+
+                                      
+    </div>
+
+    <div class="col-md-9">
+
+             <!-- WEBSITE OVERVIEW-->
+
+                   <div class="panel panel-default">
+                        
+                        <div class="panel-heading main-color-bg"> <h3 class="panel-title"> Voting Process Overview/Y1-Cs-Dy</h3> </div>
+                        <div class="panel-body">
+
+                          <div class="col-md-3">
+                             <a href="" style="text-decoration:none;"><div class="well dash-box">
+                                <h2> <span class="glyphicon glyphicon-user" aria-hidden="true"> 20</span> <h2>
+                                <h3>Applicants</h3>
+                              </div> </a>
+                           </div>
+
+                           <div class="col-md-3">
+                             <a href="" style="text-decoration:none;"> <div class="well dash-box">
+                                <h2> <span class="glyphicon glyphicon-list-alt" aria-hidden="true"> 30</span> <h2>
+                                <h3>Voters</h3>
+                              </div> </a>
+                           </div>
+
+
+                           <div class="col-md-3">
+                             <a href="" style="text-decoration:none;"><div class="well dash-box">
+                                <h2> <span class="glyphicon glyphicon-pencil" aria-hidden="true"> 40</span> <h2>
+                                <h3>Non-Voters</h3>
+                              </div> </a>
+                           </div>
+
+                           <div class="col-md-3">
+                             <a href="" style="text-decoration:none;"> <div class="well dash-box">
+                                <h2> <span class="glyphicon glyphicon-stats" aria-hidden="true"></span> <h2>
+                                <h3> Vote Progress </h3>
+                              </div> </a>
+                           </div>
+
+
+
+                          </div>
+
+                        </div>
+              
+
+        <!-- LATEST USERS-->
+
+                   <div class="panel panel-default">
+                        <div class="panel-heading">
+                           <h3 class="panel-title"> Latest Applicants </h3>
+                        </div>
+                        
+                        <div class="panel-body">
+
+                             <table class="table table-striped table-hover ">
+                                   
+                                   <tr>
+                                     <th> FirstName</th>
+                                     <th> LastName</th>
+                                     <th> Apllied</th>
+                                     <th> Cv.</th>
+                                     <th> Profile </th>
+                                     <th> Post</th>
+                                     <th> Approval </th>
+                                   </tr>
+
+                                   <tr>
+                                     <td> Jill</td>
+                                     <td> Smith</td>
+                                     <td> 3/4/2015</td>
+                                     <td> <a href="" style="text-decoration:none;"> cv </a></td>
+                                     <td> <img src=""> img.</td>
+                                     <td> CP</td>
+                                     <td> <input type="button" value="Approve" class="btn btn-primary" style="height:30px;border-radius:30px;"></td>
+                                   </tr>
+
+                                   <tr >
+                                     <td> John</td>
+                                     <td> Doe</td>
+                                     <td> 3/2/2015</td>
+                                     <td> <a href="" style="text-decoration:none;"> cv </a></td>
+                                     <td> <img src=""> img.</td>
+                                     <td> CPA</td>
+                                     <td> <input type="button" value="Approve" class="btn btn-primary" style="height:30px;border-radius:30px;"></td>
+                                   </tr>
+                                   
+                                    <tr>
+                                     <td> Stephanie</td>
+                                     <td> landon</td>
+                                     <td> 3/4/2012</td>
+                                     <td> <a href="" style="text-decoration:none;"> cv </a></td>
+                                     <td> <img src=""> img.</td>
+                                     <td> Advisors</td>
+                                     <td> <input type="button" value="Approve" class="btn btn-primary" style="height:30px;border-radius:30px;"></td>
+                                   </tr>
+
+                                    <tr>
+                                     <td> Mike</td>
+                                     <td> Johnson</td>
+                                     <td> 3/4/2011</td>
+                                     <td> <a href="" style="text-decoration:none;"> cv </a></td>
+                                     <td> <img src=""> img.</td>
+                                     <td> CP</td>
+                                     <td> <input type="button" value="Approve" class="btn btn-primary" style="height:30px;border-radius:30px;"></td>
+                                   </tr>
+
+                              </table>
+                          
+                        </div>
+                   </div>
+
+              </div>
+            </div> 
+          </div> 
+
+ </div>
+
+</section>
+
+  <footer class="footer text-center" style="padding:10px;background:;">
+      <h3 style="color:black;font-size:20px;color:lightgrey;">ULK e-Voting system.&copy 2017 <small> Powered by ICT Club.</small>    </h3>          
+     </footer>
+
+    <!-- Modals-->
+
+    <!-- Pages -->
+
+    <!-- Modal NO1-->
+<div class="modal fade" id="addpage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <form>
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Add page </h4>
+           </div>
+                <div class="modal-body">
+                   
+                   <div class="form-group">
+                     <label> page Title</label>
+                     <textarea name="editor1" class="form-control" placeholder="page body"> </textarea>
+                  </div>
+                  
+                   <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> published  
+                    </label>
+                   </div>
+
+                    <div class="form-group">
+                     <label> Meta tags</label>
+                     <input type="text" class="form-control" placeholder=" Add some tags ">
+                  </div>
+
+                  <div class="form-group">
+                     <label> Meta Description</label>
+                     <input type="text" class="form-control" placeholder=" Add meta Description ">
+                  </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary">Save changes</button>
+                </div>
+             </div>
+        </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- MODAL NO2-->
+
+<div class="modal fade" id="addpost" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <form>
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Add posts </h4>
+           </div>
+                <div class="modal-body">
+                   
+                   <div class="form-group">
+                     <label> Add Blog Title</label>
+                     <textarea name="editor1" class="form-control" placeholder="Blog Title"> </textarea>
+
+                     <label> Blog Content</label>
+                     <textarea name="editor1" class="form-control" placeholder="Blog content"> </textarea>
+
+                  </div>
+                  
+                   <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> published  
+                    </label>
+                   </div>
+
+                  <div class="form-group">
+                     <label> Meta Description</label>
+                     <input type="text" class="form-control" placeholder=" Add meta Description ">
+                  </div>
+
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary"> Update Post</button>
+                </div>
+             </div>
+        </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- MODAL NO3-->
+
+<div class="modal fade" id="adduser" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <form>
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Add User</h4>
+           </div>
+                <div class="modal-body">
+                   <h1> Sign Up </h1>
+                   
+                   <form id="login" action="index.html" class="well">
+
+                        <div class="form-group">
+                            <label> Name</label>
+                            <input type="text" class="form-control" placeholder="name">
+                        </div>
+
+                        <div class="form-group">
+                            <label> surname</label>
+                            <input type="text" class="form-control" placeholder="Surname">
+                        </div>
+
+                        <div class="form-group">
+                            <label> Email or Username </label>
+                            <input type="email" class="form-control" placeholder="Enter email/username">
+                        </div>
+
+                         <div class="form-group">
+                            <label> Password </label>
+                            <input type="Password" class="form-control" placeholder="Password">
+                        </div>
+
+                    </form>
+
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary">Sign UP</button>
+                </div>
+             </div>
+        </form>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+
+  CKEDITOR.replace('editor1');
+
+</script>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>   
+ 
+     
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"> </script>
+
+ </body>
+</html>
